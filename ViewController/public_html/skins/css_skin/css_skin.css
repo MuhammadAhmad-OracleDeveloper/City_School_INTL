@@ -31,7 +31,8 @@
 }
 
 .theme_color {
-    background-color: #D6EAF8;
+    /*background-color: #D6EAF8;*/
+    background-color: white;
 }
 
 .sidebar_style {

@@ -203,7 +203,7 @@
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="ViewController"/>
-      <value n="j2eeWebContextRoot" v="sms"/>
+      <value n="j2eeWebContextRoot" v="css"/>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
