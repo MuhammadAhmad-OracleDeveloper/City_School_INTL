@@ -17,6 +17,10 @@
     Name="Active_Name_LOV1"
     ViewObjectName="model.LOV.Active_Name_LOV"
     RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Group_Company_Name_LOV1"
+    ViewObjectName="model.LOV.Group_Company_Name_LOV"
+    RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_RView"
     ListVOName="Active_Name_LOV1"
@@ -35,6 +39,24 @@
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
+  <ListBinding
+    Name="LOV_GroupCompanyId"
+    ListVOName="Group_Company_Name_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="GroupCompanyId"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="Id"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="TblRoleCompany"
     Entity="model.UserRoles.EO.TblRoleCompany"/>
@@ -50,7 +72,15 @@
     PrecisionRule="true"
     EntityAttrName="GroupCompanyId"
     EntityUsage="TblRoleCompany"
-    AliasName="GROUP_COMPANY_ID"/>
+    AliasName="GROUP_COMPANY_ID"
+    LOVName="LOV_GroupCompanyId">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="RoleId"
     PrecisionRule="true"

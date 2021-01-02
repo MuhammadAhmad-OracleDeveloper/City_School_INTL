@@ -21,6 +21,18 @@
     Name="Company_Pages_LOV1"
     ViewObjectName="model.UserRoles.LOV.Company_Pages_LOV"
     RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Crud_Add_LOV1"
+    ViewObjectName="model.LOV.Crud_Add_LOV"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Crud_Edit_LOV1"
+    ViewObjectName="model.LOV.Crud_Edit_LOV"
+    RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="Crud_Delete_LOV1"
+    ViewObjectName="model.LOV.Crud_Delete_LOV"
+    RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_RView"
     ListVOName="Active_Name_LOV1"
@@ -54,6 +66,60 @@
     </AttrArray>
     <AttrArray Name="ListDisplayAttrNames">
       <Item Value="Name"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_RAdd"
+    ListVOName="Crud_Add_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="RAdd"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="dbattr"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="ViewAttr"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_REdit"
+    ListVOName="Crud_Edit_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="REdit"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="dbAttr"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="ViewAttr"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
+  <ListBinding
+    Name="LOV_RDelete"
+    ListVOName="Crud_Delete_LOV1"
+    ListRangeSize="-1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="RDelete"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="dbAttr"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="ViewAttr"/>
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
@@ -93,19 +159,43 @@
     PrecisionRule="true"
     EntityAttrName="RAdd"
     EntityUsage="TblRolePages"
-    AliasName="R_ADD"/>
+    AliasName="R_ADD"
+    LOVName="LOV_RAdd">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="REdit"
     PrecisionRule="true"
     EntityAttrName="REdit"
     EntityUsage="TblRolePages"
-    AliasName="R_EDIT"/>
+    AliasName="R_EDIT"
+    LOVName="LOV_REdit">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="RDelete"
     PrecisionRule="true"
     EntityAttrName="RDelete"
     EntityUsage="TblRolePages"
-    AliasName="R_DELETE"/>
+    AliasName="R_DELETE"
+    LOVName="LOV_RDelete">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="RPrint"
     PrecisionRule="true"
