@@ -46,7 +46,7 @@
                       <f:validator binding="#{row.bindings.Name.validator}"/>
                     </af:inputText>
                   </af:column>
-                  <af:column headerText="#{bindings.Cstm_Tbl_Role_Group_Role1.hints.RoleType.label}" id="c6">
+                  <af:column headerText="Role Type" id="c6">
                     <af:selectOneChoice value="#{row.bindings.RoleType.inputValue}" readOnly="true"
                                         label="#{row.bindings.RoleType.label}"
                                         required="#{bindings.Cstm_Tbl_Role_Group_Role1.hints.RoleType.mandatory}"
@@ -129,18 +129,26 @@
                     </af:inputText>
                   </af:column>-->
                 </af:table>
+                 <af:panelGroupLayout id="pgl5" layout="horizontal" valign="middle" halign="center">
+              <af:button actionListener="#{bindings.CreateInsert.execute}" text="Add"
+              icon="#{resource['images:add.png']}"
+                       disabled="#{!bindings.CreateInsert.enabled}" id="b2"/>
+              <af:spacer width="10" height="10" id="s4"/>
+              <af:button actionListener="#{bindings.Execute.execute}" text="Verify Editing"
+              icon="#{resource['images:edit.png']}"
+                       disabled="#{!bindings.Execute.enabled}" id="b3"/>
+              <af:spacer width="10" height="10" id="s5"/>
+              <af:button actionListener="#{bindings.Delete.execute}" text="Delete" disabled="#{!bindings.Delete.enabled}"
+                       icon="#{resource['images:delete.png']}" id="b4"/>
+            </af:panelGroupLayout>
               </af:showDetailItem>
             </af:panelTabbed>
           </af:gridCell>
         </af:gridRow>
         <af:gridRow marginTop="5px" height="auto" id="gr3">
           <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="gc3">
-            <af:button actionListener="#{bindings.CreateInsert.execute}" text="CreateInsert"
-                       disabled="#{!bindings.CreateInsert.enabled}" id="b2"/>
-            <af:button actionListener="#{bindings.Execute.execute}" text="Execute"
-                       disabled="#{!bindings.Execute.enabled}" id="b3"/>
-            <af:button actionListener="#{bindings.Delete.execute}" text="Delete" disabled="#{!bindings.Delete.enabled}"
-                       id="b4"/>
+           
+            
           </af:gridCell>
         </af:gridRow>
         <af:gridRow marginTop="5px" height="auto" id="gr4">
@@ -211,7 +219,7 @@
                       <f:validator binding="#{row.bindings.Ast.validator}"/>
                     </af:inputText>
                   </af:column>-->
-                  <af:column headerText="#{bindings.TblUserView3.hints.Ast.label}" id="c7">
+                  <af:column headerText="Active" id="c7">
                     <af:selectOneChoice value="#{row.bindings.Ast.inputValue}" label="#{row.bindings.Ast.label}"
                                         required="#{bindings.TblUserView3.hints.Ast.mandatory}"
                                         shortDesc="#{bindings.TblUserView3.hints.Ast.tooltip}" id="soc13">
@@ -219,7 +227,7 @@
                       <f:validator binding="#{row.bindings.Ast.validator}"/>
                     </af:selectOneChoice>
                   </af:column>
-                  <af:column headerText="#{bindings.TblUserView3.hints.PortalId.label}" id="c4">
+                  <af:column headerText="Portal Id" id="c4">
                     <af:inputText value="#{row.bindings.PortalId.inputValue}" readOnly="true"
                                   label="#{bindings.TblUserView3.hints.PortalId.label}"
                                   required="#{bindings.TblUserView3.hints.PortalId.mandatory}"
@@ -230,7 +238,7 @@
                       <af:convertNumber groupingUsed="false" pattern="#{bindings.TblUserView3.hints.PortalId.format}"/>
                     </af:inputText>
                   </af:column>
-                  <af:column headerText="#{bindings.TblUserView3.hints.PortalName.label}" id="c5">
+                  <af:column headerText="Portal Name" id="c5">
                     <af:inputText value="#{row.bindings.PortalName.inputValue}"
                                   label="#{bindings.TblUserView3.hints.PortalName.label}"
                                   required="#{bindings.TblUserView3.hints.PortalName.mandatory}"
@@ -299,12 +307,20 @@
                     </af:inputText>
                   </af:column>-->
                 </af:table>
-                <af:button actionListener="#{bindings.CreateInsert1.execute}" text="CreateInsert1"
+                <af:panelGroupLayout id="pg3l5" layout="horizontal" valign="middle" halign="center">
+               <af:button actionListener="#{bindings.CreateInsert1.execute}" text="Add"
+               icon="#{resource['images:add.png']}"
                            disabled="#{!bindings.CreateInsert1.enabled}" id="b5"/>
-                <af:button actionListener="#{bindings.Execute1.execute}" text="Execute1"
+                  <af:spacer width="10" height="10" id="s2"/>
+                  <af:button actionListener="#{bindings.Execute1.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                            disabled="#{!bindings.Execute1.enabled}" id="b6"/>
-                <af:button actionListener="#{bindings.Delete1.execute}" text="Delete1"
+                  <af:spacer width="10" height="10" id="s3"/>
+                  <af:button actionListener="#{bindings.Delete1.execute}" text="Delete"
+                  icon="#{resource['images:delete.png']}"
                            disabled="#{!bindings.Delete1.enabled}" id="b7"/>
+            </af:panelGroupLayout>
+               
               </af:showDetailItem>
               <af:showDetailItem id="sdi1" text="Group">
                 <af:panelGridLayout id="pgl2">
@@ -321,7 +337,7 @@
                                     rowSelection="single" fetchSize="#{bindings.TblRoleGroupView4.rangeSize}"
                                     filterModel="#{bindings.TblRoleGroupView4Query.queryDescriptor}"
                                     filterVisible="true" queryListener="#{bindings.TblRoleGroupView4Query.processQuery}"
-                                    varStatus="vs" id="t3" >
+                                    varStatus="vs" id="t3" partialTriggers="::b9">
                             <af:column sortProperty="#{bindings.TblRoleGroupView4.hints.Id.name}" filterable="true"
                                        sortable="true" headerText="Id"
                                        id="c18">
@@ -336,7 +352,7 @@
                                                   pattern="#{bindings.TblRoleGroupView4.hints.Id.format}"/>
                               </af:inputText>
                             </af:column>
-                            <af:column headerText="#{bindings.TblRoleGroupView4.hints.GroupId.label}" id="c9">
+                            <af:column headerText="Group" id="c9">
                               <af:selectOneChoice value="#{row.bindings.GroupId.inputValue}" readOnly="true"
                                                   label="#{row.bindings.GroupId.label}"
                                                   required="#{bindings.TblRoleGroupView4.hints.GroupId.mandatory}"
@@ -455,8 +471,11 @@
                           </af:table>
                           <!--<af:button actionListener="#{bindings.CreateInsert2.execute}" text="CreateInsert2"
                                      disabled="#{!bindings.CreateInsert2.enabled}" id="b8"/>-->
-                          <af:button actionListener="#{bindings.Execute2.execute}" text="Execute2"
+                          <af:panelGroupLayout id="pgl6" valign="middle" halign="center" layout="horizontal">
+                          <af:button actionListener="#{bindings.Execute2.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                      disabled="#{!bindings.Execute2.enabled}" id="b9"/>
+                          </af:panelGroupLayout>
                           <!--<af:button actionListener="#{bindings.Delete2.execute}" text="Delete2"
                                      disabled="#{!bindings.Delete2.enabled}" id="b11"/>-->
                         </af:showDetailItem>
@@ -477,7 +496,7 @@
                                     filterModel="#{bindings.TblRoleCompanyView4Query.queryDescriptor}"
                                     filterVisible="true"
                                     queryListener="#{bindings.TblRoleCompanyView4Query.processQuery}" varStatus="vs"
-                                    id="t4">
+                                    id="t4" partialTriggers="::b13">
                             <af:column sortProperty="#{bindings.TblRoleCompanyView4.hints.Id.name}" filterable="true"
                                        sortable="true" headerText="Id"
                                        id="c26">
@@ -492,7 +511,7 @@
                                                   pattern="#{bindings.TblRoleCompanyView4.hints.Id.format}"/>
                               </af:inputText>
                             </af:column>
-                            <af:column headerText="#{bindings.TblRoleCompanyView4.hints.GroupCompanyId.label}" id="c11">
+                            <af:column headerText="Company" id="c11">
                               <af:selectOneChoice value="#{row.bindings.GroupCompanyId.inputValue}" readOnly="true"
                                                   label="#{row.bindings.GroupCompanyId.label}"
                                                   required="#{bindings.TblRoleCompanyView4.hints.GroupCompanyId.mandatory}"
@@ -629,8 +648,12 @@
                           </af:table>
                           <!--<af:button actionListener="#{bindings.CreateInsert3.execute}" text="CreateInsert3"
                                      disabled="#{!bindings.CreateInsert3.enabled}" id="b12"/>-->
-                          <af:button actionListener="#{bindings.Execute3.execute}" text="Execute3"
+                                      <af:panelGroupLayout id="pg16l6" valign="middle" halign="center" layout="horizontal">
+                             <af:button actionListener="#{bindings.Execute3.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                      disabled="#{!bindings.Execute3.enabled}" id="b13"/>
+                          </af:panelGroupLayout>
+                         
                           <!--<af:button actionListener="#{bindings.Delete3.execute}" text="Delete3"
                                      disabled="#{!bindings.Delete3.enabled}" id="b14"/>-->
                         </af:showDetailItem>
@@ -650,7 +673,7 @@
                                     rowSelection="single" fetchSize="#{bindings.TblRoleSbuView5.rangeSize}"
                                     filterModel="#{bindings.TblRoleSbuView5Query.queryDescriptor}" filterVisible="true"
                                     queryListener="#{bindings.TblRoleSbuView5Query.processQuery}" varStatus="vs"
-                                    id="t5">
+                                    id="t5" partialTriggers="::b16">
                             <af:column sortProperty="#{bindings.TblRoleSbuView5.hints.Id.name}" filterable="true"
                                        sortable="true" headerText="Id" id="c35">
                               <af:inputText value="#{row.bindings.Id.inputValue}" readOnly="true"
@@ -664,7 +687,7 @@
                                                   pattern="#{bindings.TblRoleSbuView5.hints.Id.format}"/>
                               </af:inputText>
                             </af:column>
-                            <af:column headerText="#{bindings.TblRoleSbuView5.hints.CompanySbuId.label}" id="c14">
+                            <af:column headerText="S.B.U" id="c14">
                               <af:selectOneChoice value="#{row.bindings.CompanySbuId.inputValue}" readOnly="true"
                                                   label="#{row.bindings.CompanySbuId.label}"
                                                   required="#{bindings.TblRoleSbuView5.hints.CompanySbuId.mandatory}"
@@ -783,7 +806,7 @@
                               </af:inputText>
                             </af:column>-->
                             <af:column sortProperty="#{bindings.TblRoleSbuView5.hints.RView.name}" filterable="true"
-                                       sortable="true" headerText="#{bindings.TblRoleSbuView5.hints.RView.label}"
+                                       sortable="true" headerText="View"
                                        id="c43">
                               <af:selectOneChoice value="#{row.bindings.RView.inputValue}"
                                                   label="#{row.bindings.RView.label}"
@@ -796,8 +819,12 @@
                           </af:table>
                           <!--<af:button actionListener="#{bindings.CreateInsert4.execute}" text="CreateInsert4"
                                      disabled="#{!bindings.CreateInsert4.enabled}" id="b15"/>-->
-                          <af:button actionListener="#{bindings.Execute4.execute}" text="Execute4"
+                                      <af:panelGroupLayout id="pgl656" valign="middle" halign="center" layout="horizontal">
+                            <af:button actionListener="#{bindings.Execute4.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                      disabled="#{!bindings.Execute4.enabled}" id="b16"/>
+                          </af:panelGroupLayout>
+                          
                           <!--<af:button actionListener="#{bindings.Delete4.execute}" text="Delete4"
                                      disabled="#{!bindings.Delete4.enabled}" id="b17"/>-->
                         </af:showDetailItem>
@@ -818,7 +845,7 @@
                                               filterModel="#{bindings.TblRoleModulesView2Query.queryDescriptor}"
                                               filterVisible="true"
                                               queryListener="#{bindings.TblRoleModulesView2Query.processQuery}"
-                                              varStatus="vs" id="t6">
+                                              varStatus="vs" id="t6" partialTriggers="::b19">
                                       <af:column sortProperty="#{bindings.TblRoleModulesView2.hints.Id.name}"
                                                  filterable="true" sortable="true"
                                                  headerText="#{bindings.TblRoleModulesView2.hints.Id.label}" id="c44">
@@ -850,7 +877,7 @@
                                                             pattern="#{bindings.TblRoleModulesView2.hints.RoleId.format}"/>
                                         </af:inputText>
                                       </af:column>-->
-                                      <af:column headerText="#{bindings.TblRoleModulesView2.hints.CompanyModuleId.label}"
+                                      <af:column headerText="Module"
                                                  id="c51">
                                         <af:selectOneChoice value="#{row.bindings.CompanyModuleId.inputValue}"
                                                             label="#{row.bindings.CompanyModuleId.label}" readOnly="true"
@@ -863,7 +890,7 @@
                                       </af:column>
                                       <af:column sortProperty="#{bindings.TblRoleModulesView2.hints.RView.name}"
                                                  filterable="true" sortable="true"
-                                                 headerText="#{bindings.TblRoleModulesView2.hints.RView.label}"
+                                                 headerText="View"
                                                  id="c46">
                                         <af:selectOneChoice value="#{row.bindings.RView.inputValue}"
                                                             label="#{row.bindings.RView.label}"
@@ -965,8 +992,12 @@
                                     </af:table>
                                     <!--<af:button actionListener="#{bindings.CreateInsert5.execute}" text="CreateInsert5"
                                                disabled="#{!bindings.CreateInsert5.enabled}" id="b18"/>-->
-                                    <af:button actionListener="#{bindings.Execute5.execute}" text="Execute5"
+                                                <af:panelGroupLayout id="pgl986" valign="middle" halign="center" layout="horizontal">
+                             <af:button actionListener="#{bindings.Execute5.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                                disabled="#{!bindings.Execute5.enabled}" id="b19"/>
+                          </af:panelGroupLayout>
+                                   
                                     <!--<af:button actionListener="#{bindings.Delete5.execute}" text="Delete5"
                                                disabled="#{!bindings.Delete5.enabled}" id="b20"/>-->
                                   </af:showDetailItem>
@@ -988,7 +1019,7 @@
                                               filterModel="#{bindings.TblRoleSubModulesView3Query.queryDescriptor}"
                                               filterVisible="true"
                                               queryListener="#{bindings.TblRoleSubModulesView3Query.processQuery}"
-                                              varStatus="vs" id="t7">
+                                              varStatus="vs" id="t7" partialTriggers="::b22">
                                       <af:column sortProperty="#{bindings.TblRoleSubModulesView3.hints.Id.name}"
                                                  filterable="true" sortable="true"
                                                  headerText="#{bindings.TblRoleSubModulesView3.hints.Id.label}"
@@ -1037,7 +1068,7 @@
                                                             pattern="#{bindings.TblRoleSubModulesView3.hints.RoleModuleId.format}"/>
                                         </af:inputText>
                                       </af:column>-->
-                                      <af:column headerText="#{bindings.TblRoleSubModulesView3.hints.CompanySubModuleId.label}"
+                                      <af:column headerText="Sub Module"
                                                  id="c56">
                                         <af:selectOneChoice value="#{row.bindings.CompanySubModuleId.inputValue}"
                                                             label="#{row.bindings.CompanySubModuleId.label}" readOnly="true"
@@ -1050,7 +1081,7 @@
                                       </af:column>
                                       <af:column sortProperty="#{bindings.TblRoleSubModulesView3.hints.RView.name}"
                                                  filterable="true" sortable="true"
-                                                 headerText="#{bindings.TblRoleSubModulesView3.hints.RView.label}"
+                                                 headerText="View"
                                                  id="c57">
                                         <af:selectOneChoice value="#{row.bindings.RView.inputValue}"
                                                             label="#{row.bindings.RView.label}"
@@ -1136,8 +1167,12 @@
                                     </af:table>
                                     <!--<af:button actionListener="#{bindings.CreateInsert6.execute}" text="CreateInsert6"
                                                disabled="#{!bindings.CreateInsert6.enabled}" id="b21"/>-->
-                                    <af:button actionListener="#{bindings.Execute6.execute}" text="Execute6"
+                                                <af:panelGroupLayout id="pgl236" valign="middle" halign="center" layout="horizontal">
+                            <af:button actionListener="#{bindings.Execute6.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                                disabled="#{!bindings.Execute6.enabled}" id="b22"/>
+                          </af:panelGroupLayout>
+                                    
                                     <!--<af:button actionListener="#{bindings.Delete6.execute}" text="Delete6"
                                                disabled="#{!bindings.Delete6.enabled}" id="b23"/>-->
                                   </af:showDetailItem>
@@ -1158,7 +1193,7 @@
                                               filterModel="#{bindings.TblRolePagesView2Query.queryDescriptor}"
                                               filterVisible="true"
                                               queryListener="#{bindings.TblRolePagesView2Query.processQuery}"
-                                              varStatus="vs" id="t8">
+                                              varStatus="vs" id="t8" partialTriggers="::b25">
                                       <af:column sortProperty="#{bindings.TblRolePagesView2.hints.Id.name}"
                                                  filterable="true" sortable="true"
                                                  headerText="#{bindings.TblRolePagesView2.hints.Id.label}" id="c62">
@@ -1189,7 +1224,7 @@
                                                             pattern="#{bindings.TblRolePagesView2.hints.RoleId.format}"/>
                                         </af:inputText>
                                       </af:column>-->
-                                      <af:column headerText="#{bindings.TblRolePagesView2.hints.CompanyPagesId.label}"
+                                      <af:column headerText="Pages"
                                                  id="c70">
                                         <af:selectOneChoice value="#{row.bindings.CompanyPagesId.inputValue}"
                                                             label="#{row.bindings.CompanyPagesId.label}" readOnly="true"
@@ -1202,7 +1237,7 @@
                                       </af:column>
                                       <af:column sortProperty="#{bindings.TblRolePagesView2.hints.RView.name}"
                                                  filterable="true" sortable="true"
-                                                 headerText="#{bindings.TblRolePagesView2.hints.RView.label}" id="c64">
+                                                 headerText="View" id="c64">
                                         <af:selectOneChoice value="#{row.bindings.RView.inputValue}"
                                                             label="#{row.bindings.RView.label}"
                                                             required="#{bindings.TblRolePagesView2.hints.RView.mandatory}"
@@ -1212,7 +1247,7 @@
                                           <f:validator binding="#{row.bindings.RView.validator}"/>
                                         </af:selectOneChoice>
                                       </af:column>
-                                      <af:column headerText="#{bindings.TblRolePagesView2.hints.RAdd.label}" id="c15">
+                                      <af:column headerText="Add" id="c15">
                                         <af:selectOneChoice value="#{row.bindings.RAdd.inputValue}"
                                                             label="#{row.bindings.RAdd.label}"
                                                             required="#{bindings.TblRolePagesView2.hints.RAdd.mandatory}"
@@ -1222,7 +1257,7 @@
                                           <f:validator binding="#{row.bindings.RAdd.validator}"/>
                                         </af:selectOneChoice>
                                       </af:column>
-                                      <af:column headerText="#{bindings.TblRolePagesView2.hints.REdit.label}" id="c16">
+                                      <af:column headerText="Edit" id="c16">
                                         <af:selectOneChoice value="#{row.bindings.REdit.inputValue}"
                                                             label="#{row.bindings.REdit.label}"
                                                             required="#{bindings.TblRolePagesView2.hints.REdit.mandatory}"
@@ -1232,7 +1267,7 @@
                                           <f:validator binding="#{row.bindings.REdit.validator}"/>
                                         </af:selectOneChoice>
                                       </af:column>
-                                      <af:column headerText="#{bindings.TblRolePagesView2.hints.RDelete.label}"
+                                      <af:column headerText="Delete"
                                                  id="c17">
                                         <af:selectOneChoice value="#{row.bindings.RDelete.inputValue}"
                                                             label="#{row.bindings.RDelete.label}"
@@ -1304,8 +1339,12 @@
                                     </af:table>
                                     <!--<af:button actionListener="#{bindings.CreateInsert7.execute}" text="CreateInsert7"
                                                disabled="#{!bindings.CreateInsert7.enabled}" id="b24"/>-->
-                                    <af:button actionListener="#{bindings.Execute7.execute}" text="Execute7"
+                                                <af:panelGroupLayout id="pgl23" valign="middle" halign="center" layout="horizontal">
+                            <af:button actionListener="#{bindings.Execute7.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                                disabled="#{!bindings.Execute7.enabled}" id="b25"/>
+                          </af:panelGroupLayout>
+                                    
                                     <!--<af:button actionListener="#{bindings.Delete7.execute}" text="Delete7"
                                                disabled="#{!bindings.Delete7.enabled}" id="b26"/>-->
                                   </af:showDetailItem>
@@ -1321,7 +1360,7 @@
                                               filterModel="#{bindings.TblRoleReportsView2Query.queryDescriptor}"
                                               filterVisible="true"
                                               queryListener="#{bindings.TblRoleReportsView2Query.processQuery}"
-                                              varStatus="vs" id="t9">
+                                              varStatus="vs" id="t9" partialTriggers="::b28">
                                       <af:column sortProperty="#{bindings.TblRoleReportsView2.hints.Id.name}"
                                                  filterable="true" sortable="true"
                                                  headerText="#{bindings.TblRoleReportsView2.hints.Id.label}" id="c73">
@@ -1353,7 +1392,7 @@
                                                             pattern="#{bindings.TblRoleReportsView2.hints.RoleId.format}"/>
                                         </af:inputText>
                                       </af:column>-->
-                                      <af:column headerText="#{bindings.TblRoleReportsView2.hints.CompanyReportId.label}"
+                                      <af:column headerText="Reports"
                                                  id="c76">
                                         <af:selectOneChoice value="#{row.bindings.CompanyReportId.inputValue}"
                                                             label="#{row.bindings.CompanyReportId.label}" readOnly="true"
@@ -1366,7 +1405,7 @@
                                       </af:column>
                                       <af:column sortProperty="#{bindings.TblRoleReportsView2.hints.RView.name}"
                                                  filterable="true" sortable="true"
-                                                 headerText="#{bindings.TblRoleReportsView2.hints.RView.label}"
+                                                 headerText="View"
                                                  id="c75">
                                         <af:selectOneChoice value="#{row.bindings.RView.inputValue}"
                                                             label="#{row.bindings.RView.label}"
@@ -1412,8 +1451,12 @@
                                     </af:table>
                                     <!--<af:button actionListener="#{bindings.CreateInsert8.execute}" text="CreateInsert8"
                                                disabled="#{!bindings.CreateInsert8.enabled}" id="b27"/>-->
-                                    <af:button actionListener="#{bindings.Execute8.execute}" text="Execute8"
+                                                <af:panelGroupLayout id="pg12l6" valign="middle" halign="center" layout="horizontal">
+                            <af:button actionListener="#{bindings.Execute8.execute}" text="Verify Editing"
+                  icon="#{resource['images:edit.png']}"
                                                disabled="#{!bindings.Execute8.enabled}" id="b28"/>
+                          </af:panelGroupLayout>
+                                    
                                     <!--<af:button actionListener="#{bindings.Delete8.execute}" text="Delete8"
                                                disabled="#{!bindings.Delete8.enabled}" id="b29"/>-->
                                   </af:showDetailItem>
