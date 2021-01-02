@@ -487,6 +487,14 @@
           usageId="view_Collection_ChargesPageDef"/>
     <page path="/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Staff/Daily_Teacher_Assessment.jsff"
           usageId="view_Daily_Teacher_AssessmentPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/General_Setup/Section_Wise_Timetable_Setup_TaskFlow.xml#Section_Wise_Timetable_Setup_TaskFlow@ExecuteWithParams"
+          usageId="view_Section_Wise_Timetable_Setup_TaskFlow_Section_Wise_Timetable_Setup_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/General_Setup/Weekly_Study_Plan_TaskFlow.xml#Weekly_Study_Plan_TaskFlow@ExecuteWithParams"
+          usageId="view_Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/General_Setup/Teacher_Student_Wise_Monitoring_TaskFlow.xml#Teacher_Student_Wise_Monitoring_TaskFlow@ExecuteWithParams"
+          usageId="view_Teacher_Student_Wise_Monitoring_TaskFlow_Teacher_Student_Wise_Monitoring_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/General_Setup/Notification_Memo_TaskFlow.xml#Notification_Memo_TaskFlow@ExecuteWithParams"
+          usageId="view_Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_GroupPageDef" path="Main_Pages.Group.GroupPageDef"/>
@@ -941,6 +949,14 @@
           path="Fragments.Group.Company.SBU.Modules.School_Management_System.Fee_Management.Collection_ChargesPageDef"/>
     <page id="view_Daily_Teacher_AssessmentPageDef"
           path="Fragments.Group.Company.SBU.Modules.School_Management_System.Staff.Daily_Teacher_AssessmentPageDef"/>
+    <page id="view_Section_Wise_Timetable_Setup_TaskFlow_Section_Wise_Timetable_Setup_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Section_Wise_Timetable_Setup_TaskFlow_Section_Wise_Timetable_Setup_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Teacher_Student_Wise_Monitoring_TaskFlow_Teacher_Student_Wise_Monitoring_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Teacher_Student_Wise_Monitoring_TaskFlow_Teacher_Student_Wise_Monitoring_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageDefinitionUsages>
   
   <!--<pageDefinitionUsages>
