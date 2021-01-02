@@ -5,19 +5,19 @@
    <View
       id="View2">
       <property
-         name="activityId">Discount_Policy</property>
+         name="activityId">Library_Book_Issue_Request</property>
       <property
          name="pageFragment">true</property>
       <property
-         name="x">494.0</property>
+         name="x">617.0</property>
       <property
          name="start">false</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>Discount_Policy&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Library_Book_Issue_Request&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">228.19531</property>
+         name="y">250.5459</property>
       <property
-         name="page">/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Fee_Management/Discount_Policy.jsff</property>
+         name="page">/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Student_Management/Library_Book_Issue_Request.jsff</property>
       <property
          name="exceptionHandler">false</property>
    </View>
@@ -26,13 +26,13 @@
       <property
          name="activityId">ExecuteWithParams</property>
       <property
-         name="x">151.35156</property>
+         name="x">283.35156</property>
       <property
          name="start">true</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>ExecuteWithParams&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
       <property
-         name="y">369.1494</property>
+         name="y">392.1494</property>
       <property
          name="exceptionHandler">false</property>
    </MethodCall>
@@ -44,6 +44,6 @@
       <property
          name="fromOutcome">ExecuteWithParams</property>
       <property
-         name="sdm:polyPoints">R50,192.35156,368.79883,453.0,227.84473,L50</property>
+         name="sdm:polyPoints">R50,324.35156,391.79883,576.0,250.19531,L50</property>
    </ControlFlowCase>
 </SDM>

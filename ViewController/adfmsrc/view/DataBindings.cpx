@@ -423,11 +423,11 @@
           usageId="view_Assessment_Marks_EntryPageDef"/>
     <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Fee_Management/Discount_Setup_TaskFlow.xml#Discount_Setup_TaskFlow@ExecuteWithParams"
           usageId="view_Discount_Setup_TaskFlow_Discount_Setup_TaskFlow_ExecuteWithParamsPageDef"/>
-    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Fee_Management/Discount_Policy_TaskFlow.xml#Discount_Policy_TaskFlow@ExecuteWithParams"
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Student_Management/Discount_Policy_TaskFlow.xml#Discount_Policy_TaskFlow@ExecuteWithParams"
           usageId="view_Discount_Policy_TaskFlow_Discount_Policy_TaskFlow_ExecuteWithParamsPageDef1"/>
     <page path="/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Fee_Management/Discount_Setup.jsff"
           usageId="view_Discount_SetupPageDef"/>
-    <page path="/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Fee_Management/Discount_Policy.jsff"
+    <page path="/WEB-INF/Fragments/Group/Company/SBU/Modules/School_Management_System/Student_Management/Discount_Policy.jsff"
           usageId="view_Discount_PolicyPageDef1"/>
     <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Staff/Grade_Attendance_TaskFlow.xml#Grade_Attendance_TaskFlow@ExecuteWithParams"
           usageId="view_Grade_Attendance_TaskFlow_Grade_Attendance_TaskFlow_ExecuteWithParamsPageDef"/>
@@ -495,6 +495,8 @@
           usageId="view_Teacher_Student_Wise_Monitoring_TaskFlow_Teacher_Student_Wise_Monitoring_TaskFlow_ExecuteWithParamsPageDef"/>
     <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/General_Setup/Notification_Memo_TaskFlow.xml#Notification_Memo_TaskFlow@ExecuteWithParams"
           usageId="view_Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Student_Management/Library_Book_Issue_Request_TaskFlow.xml#Library_Book_Issue_Request_TaskFlow@ExecuteWithParams"
+          usageId="view_Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_GroupPageDef" path="Main_Pages.Group.GroupPageDef"/>
@@ -957,6 +959,8 @@
           path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Teacher_Student_Wise_Monitoring_TaskFlow_Teacher_Student_Wise_Monitoring_TaskFlow_ExecuteWithParamsPageDef"/>
     <page id="view_Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"
           path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Student_Management.Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageDefinitionUsages>
   
   <!--<pageDefinitionUsages>
