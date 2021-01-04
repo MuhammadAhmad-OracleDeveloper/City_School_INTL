@@ -497,6 +497,18 @@
           usageId="view_Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
     <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Student_Management/Library_Book_Issue_Request_TaskFlow.xml#Library_Book_Issue_Request_TaskFlow@ExecuteWithParams"
           usageId="view_Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Assessment_Evaluation_Report_TaskFlow.xml#Assessment_Evaluation_Report_TaskFlow@ExecuteWithParams"
+          usageId="view_Assessment_Evaluation_Report_TaskFlow_Assessment_Evaluation_Report_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Homework_Download_Upload_TaskFlow.xml#Homework_Download_Upload_TaskFlow@ExecuteWithParams"
+          usageId="view_Homework_Download_Upload_TaskFlow_Homework_Download_Upload_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Notification_Email_TaskFlow.xml#Notification_Email_TaskFlow@ExecuteWithParams"
+          usageId="view_Notification_Email_TaskFlow_Notification_Email_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Weekly_Study_Plan_TaskFlow.xml#Weekly_Study_Plan_TaskFlow@ExecuteWithParams"
+          usageId="view_Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef1"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Attendance_Report_TaskFlow.xml#Attendance_Report_TaskFlow@ExecuteWithParams"
+          usageId="view_Attendance_Report_TaskFlow_Attendance_Report_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page path="/WEB-INF/TaskFlows/Group/Company/SBU/Modules/School_Management_System/Parent_Student_Portal/Fee_Voucher_TaskFlow.xml#Fee_Voucher_TaskFlow@ExecuteWithParams"
+          usageId="view_Fee_Voucher_TaskFlow_Fee_Voucher_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="view_GroupPageDef" path="Main_Pages.Group.GroupPageDef"/>
@@ -961,6 +973,18 @@
           path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.General_Setup.Notification_Memo_TaskFlow_Notification_Memo_TaskFlow_ExecuteWithParamsPageDef"/>
     <page id="view_Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"
           path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Student_Management.Library_Book_Issue_Request_TaskFlow_Library_Book_Issue_Request_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Assessment_Evaluation_Report_TaskFlow_Assessment_Evaluation_Report_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Assessment_Evaluation_Report_TaskFlow_Assessment_Evaluation_Report_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Homework_Download_Upload_TaskFlow_Homework_Download_Upload_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Homework_Download_Upload_TaskFlow_Homework_Download_Upload_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Notification_Email_TaskFlow_Notification_Email_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Notification_Email_TaskFlow_Notification_Email_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef1"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Weekly_Study_Plan_TaskFlow_Weekly_Study_Plan_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Attendance_Report_TaskFlow_Attendance_Report_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Attendance_Report_TaskFlow_Attendance_Report_TaskFlow_ExecuteWithParamsPageDef"/>
+    <page id="view_Fee_Voucher_TaskFlow_Fee_Voucher_TaskFlow_ExecuteWithParamsPageDef"
+          path="TaskFlows.Group.Company.SBU.Modules.School_Management_System.Parent_Student_Portal.Fee_Voucher_TaskFlow_Fee_Voucher_TaskFlow_ExecuteWithParamsPageDef"/>
   </pageDefinitionUsages>
   
   <!--<pageDefinitionUsages>
